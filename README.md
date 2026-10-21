@@ -98,4 +98,4 @@ Every script resumes: it skips names that already have a result, and writes to d
 
 Code: MIT. Data: CC0 — take it, cite `https://bandnamecheck.com` if you can.
 
-Contact: wuzhihun_shen@outlook.com
+Corrections and re-run notes: open an issue in this repository.

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """多页构建：16 个曲风页（首页 = metal），每页自己的名字池与核验记录"""
-import json, html, datetime, shutil
+import json, html, datetime, shutil, os
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -8,7 +8,7 @@ PUB = ROOT / "dist"
 SRC = ROOT / "public"
 DATA = ROOT / "data"
 BUILD = datetime.date.today().isoformat()
-GA = "G-5STK2RPWNR"
+GA = os.environ.get("GA_ID", "")   # 站点自己的 GA ID，不进公开仓库
 SITE = "https://bandnamecheck.com"
 
 # key, label, slug, keyword
